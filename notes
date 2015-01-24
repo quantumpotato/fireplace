@@ -1,0 +1,29 @@
+stranger at door
+if you accept them, record: accept
+you sleep, wake up outside
+  see a cabin?
+  go to cabin
+   if accepted, you kill them,reset cycle
+   if rejected, car?
+
+  ignore cabin
+    build fire?
+     sleep by fire
+      wake up
+      hear the car
+      throw a brick from fireplace?
+        ?
+    ignore fire -- the fire looks dim, go into the forest for firewood
+
+drive a car
+  no brick thrown
+    drive away
+  brick thrown
+    wake up in the car, cold, -- ? wake up inside?
+  no one to throw the brick -- they ignored the cabin, ignored the fire, in the woods
+    hit them in the woods -- drive home and sit by the fire
+
+  never fire, the person went to the woods
+    they get hit by the car
+
+
