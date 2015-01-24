@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<if $incinerated eq true>>\u000a\u000a<<else>>\u000aPhew. I cut a righteous pile of timber, cut and drying by bonfire. Took a full day of work but my family needs new homes for the youngins. Sprouting like oaks, slow and steady. At some point I ought to build me a new home, this one's got a few scratches but the photos keep my heart warm even when the wind burns my skin.\u000a\u000aA fair number of the old cabin panels were fallin right apart. I made the bonfire out of them and put the rest inside my fireplace. Heh. Fireplace. It's workin and then it'll relax at night, just like a good folk should.\u000a<<endif>>\u000aI'll just sit here until I..\u000a\u000a[[hear a quick knock at the door|Knock]]
+V<<if $incinerated eq true>>\u000a<<set $incinerated = false>>\u000aPhew. I cut a righteous pile of timber, cut and burning in the bonfire. I'm sprouting like an oak in this family, slow and steady. At some point I ought to build me a new home, this one's got a few scratches and burns but the fire keeps my heart warm even when the wind and memories burn my soul.\u000a\u000aHeh. Soul. Sometimes I feel like the sole kinfolk in these woods, cutting wood and staying warm by the fireplace. I work and then I relax at night, just like a good folk should.\u000a<<else>>\u000aPhew. I cut a righteous pile of timber, cut and drying by bonfire. Took a full day of work but my family needs new homes for the youngins. Sprouting like oaks, slow and steady. At some point I ought to build me a new home, this one's got a few scratches but the photos keep my heart warm even when the wind burns my skin.\u000a\u000aA fair number of the old cabin panels were fallin right apart. I made the bonfire out of them and put the rest inside my fireplace. Heh. Fireplace. It's workin and then it'll relax at night, just like a good folk should.\u000a<<endif>>\u000aI'll just sit here until I..\u000a\u000a[[hear a quick knock at the door|Knock]]
 p22
 sS'title'
 p23
@@ -52,8 +52,8 @@ p26
 I1
 I24
 I15
-I16
-I7
+I21
+I40
 I5
 I24
 I0
@@ -267,7 +267,7 @@ Tiddler
 p92
 (dp93
 g21
-V<<set $accepted = true>>\u000aI welcome my kin folk inside.\u000a\u000aWe sit in front of the fire and talk about how cold outside has gotten since west forest burned down.\u000a\u000aWe talk easily, warming ourselves in front of the fire and then something goes wrong.\u000a\u000aI explain to my kin folk that the home will take another day before the frame goes up. I try to explain this, I try to explain that good work takes good time and [[they strike without warning|StruckDown]]
+V<<set $accepted = true>>\u000aI welcome my kin folk inside.\u000a\u000aWe sit in front of the fire and talk about how cold outside has gotten since west forest burned down.\u000a\u000aWe talk easily, warming ourselves in front of the fire and then something goes wrong.\u000a\u000aI explain to my kin folk that the home will take another day before the frame goes up. I try to explain this, I try to explain that good work takes good time and [[they strike without warning.|StruckDown]]
 p94
 sg23
 VEntrance
@@ -278,8 +278,8 @@ g26
 I1
 I24
 I15
-I10
-I13
+I24
+I15
 I5
 I24
 I0
@@ -306,7 +306,7 @@ tp103
 Rp104
 sbsa(dp105
 g14
-I01
+I00
 sg15
 (lp106
 F570.0
@@ -367,7 +367,7 @@ Tiddler
 p122
 (dp123
 g21
-VThey fall dead by the fire.\u000a\u000aI pull in timber from the pile outside and start crafting a chair to sit in.\u000a\u000aMy hands take time to warm up but when they do, I carve quickly.\u000a\u000aI'm happy to feel the warmth of the fire as I work hard, as a good folk should.\u000a\u000a<<silently>>\u000a<<set $chair = true>>\u000a<<endsilently>>\u000a[[I finally finish my work|Start2]]
+VThey fall dead by the fire.\u000a\u000aI pull in timber from the pile outside and start crafting a chair to sit in.\u000a\u000aMy hands take time to warm up but when they do, I carve quickly.\u000a\u000aI'm happy to feel the warmth of the fire as I work hard, as a good folk should.\u000a\u000a[[I finally finish my work.|Start2]]\u000a
 p124
 sg23
 VStruckDown
@@ -376,12 +376,12 @@ sg25
 g26
 ((I2015
 I1
+I24
+I15
 I23
-I23
-I17
-I48
-I4
-I23
+I6
+I5
+I24
 I0
 tp126
 (dp127
@@ -417,7 +417,7 @@ Tiddler
 p137
 (dp138
 g21
-VI welcome my kin folk inside.\u000a\u000aI sit in my fine chair while they warm their hands by the fire. We talk about how tough gathering firewood has been since the fire that burned west forest.\u000a\u000aWe talk easily, staying warm in front of the fire and then something goes wrong.\u000a\u000aI explain to my kin folk that my home will go up first since my marriage happens in just a couple days from now and before their wedding later next week. I try to explain everything about family tradition but [[they strike without warning|StruckDown2]]
+VI welcome my kin folk inside.\u000a\u000aI sit in my fine chair while they warm their hands by the fire. We talk about how tough gathering firewood has been since the fire that burned west forest.\u000a\u000aWe talk easily, staying warm in front of the fire and then something goes wrong.\u000a\u000aI explain to my kin folk that my home will go up first since my marriage happens in just a couple days from now and before their wedding later next week. I try to explain everything about family tradition but [[they strike without warning.|StruckDown2]]
 p139
 sg23
 VEntrance2
@@ -428,8 +428,8 @@ g26
 I1
 I24
 I15
-I9
-I50
+I24
+I0
 I5
 I24
 I0
@@ -503,7 +503,7 @@ Tiddler
 p162
 (dp163
 g21
-VThey fall dead out of their chair before the fire.\u000a\u000aI pull in timber from the pile outside and start crafting a bed to sleep in.\u000a\u000aMy hands take time to warm up but when they do, I carve quickly.\u000a\u000aI'm happy to feel the warmth of the fire as I work hard, as a good folk should.\u000a\u000a<<silently>>\u000a<<set $bed = true>>\u000a<<endsilently>>\u000a[[I finally finish my work|Start3]]
+VThey fall dead out of their chair before the fire.\u000a\u000aI pull in timber from the pile outside and start crafting a bed to sleep in.\u000a\u000aMy hands take time to warm up but when they do, I carve quickly.\u000a\u000aI'm happy to feel the warmth of the fire as I work hard, as a good folk should.\u000a\u000a[[I finally finish my work.|Start3]]
 p164
 sg23
 VStruckDown2
@@ -512,12 +512,12 @@ sg25
 g26
 ((I2015
 I1
+I24
+I15
 I23
-I23
-I19
-I38
-I4
-I23
+I0
+I5
+I24
 I0
 tp166
 (dp167
@@ -892,7 +892,7 @@ tp278
 Rp279
 sbsa(dp280
 g14
-I00
+I01
 sg15
 (lp281
 I150
@@ -903,7 +903,7 @@ Tiddler
 p282
 (dp283
 g21
-VI welcome my kin folk inside.\u000a\u000aI offer them a seat in the fine chair and lay back in my fine bed. They warm their hands as the chair rocks them through currents of heat from the fire. We talk about how family tradition has changed before and after fire that burned west forest.\u000a\u000aWe talk easily, staying warm in front of the fire and then something goes wrong.\u000a\u000aI'm just about to fall asleep dreaming of the west forest before it burned down while they discuss the limited resources our family has avilable when [[they strike without warning|StruckDown3]]
+VI welcome my kin folk inside.\u000a\u000aI offer them a seat in the fine chair and lay back in my fine bed. They warm their hands as the chair rocks them through currents of heat from the fire. We talk about how family tradition has changed before and after fire that burned west forest.\u000a\u000aWe talk easily, staying warm in front of the fire and then something goes wrong.\u000a\u000aI'm just about to fall asleep dreaming of the west forest before it burned down while they discuss the limited resources our family has avilable when [[they strike without warning.|StruckDown3]]
 p284
 sg23
 VEntrance3
@@ -914,8 +914,8 @@ g26
 I1
 I24
 I15
-I10
-I50
+I24
+I21
 I5
 I24
 I0
