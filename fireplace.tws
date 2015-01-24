@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-V/Users/quantum/fireplace.tws
+V/Users/quantum/Desktop/fireplace.tws
 p4
 sS'metadata'
 p5
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VPhew. 500 kilograms of timber, cut and drying by bonfire. Took a full day of work but my family needs needs new homes for the youngins. Sprouting like oaks, slow and steady. At some point I ought to build me a new home, this one's got a few scratches but the photos keep my heart warm even when the wind burns my skin.\u000a\u000aA fair number of the old cabin panels were fallin right apart. I made the bonfire out of them and put the rest inside my fireplace. Heh. Fireplace. It's workin and then it'll relax at night, just like a good folk should.\u000a\u000aI'll just sit here until I..\u000a\u000a[[hear a quick knock at the door|Knock]]
+V<<if $chair eq false>>\u000a\u000aPhew. 500 kilograms of timber, cut and drying by bonfire. Took a full day of work but my family needs new homes for the youngins. Sprouting like oaks, slow and steady. At some point I ought to build me a new home, this one's got a few scratches but the photos keep my heart warm even when the wind burns my skin.\u000a\u000aA fair number of the old cabin panels were fallin right apart. I made the bonfire out of them and put the rest inside my fireplace. Heh. Fireplace. It's workin and then it'll relax at night, just like a good folk should.\u000a\u000aI'll just sit here until I..\u000a\u000a<<else>>\u000a\u000aPhew. Three sturdy pieces cut into a sturdy frame. Took a few hours but I work hard like a good folk should.\u000a\u000aI ease into my creation, a fine chair made from the finest of the forest. At some point I ought to build me a new home to fit this new chair, something without photos of the past reminding me of what's passed.\u000a\u000aHeh. The past is passed. I've moved on from work to relax at night, just like a goofolk should.\u000a\u000aI'll just sit here until I..\u000a\u000a<<endif>>\u000a\u000a[[hear a quick knock at the door|Knock]]
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I1
 I23
-I20
-I49
 I22
+I51
+I34
 I4
 I23
 I0
@@ -159,7 +159,7 @@ g14
 I00
 sg15
 (lp61
-F262.0
+F150.0
 aF10.0
 asg17
 (itiddlywiki
@@ -196,15 +196,15 @@ g14
 I00
 sg15
 (lp72
-F262.0
-aF150.0
+F150.0
+aF149.0
 asg17
 (itiddlywiki
 Tiddler
 p73
 (dp74
 g21
-VWell, guess I better answer that. Wish I could have fallen asleep by the fire and dreamed of warmer days. But wishing ain't what keeps a good folk going these days.\u000a\u000aMy stone floor still cold, fire just got started. Shoes still drying by the fire. Wishing ain't what.. \u000a\u000a[[a second knock hurries me to the door|Knock2]]
+V<<if $chair eq false>>\u000aWell, guess I better answer that. Wish I could have fallen asleep by the fire and dreamed of warmer days. But wishing ain't what keeps a good folk going these days.\u000a\u000aMy stone floor still cold, fire just got started. Shoes still drying by the fire. Wishing ain't what.. \u000a<<else>>\u000aWell, guess I better answer that. Wish I could have fallen asleep rocking in this fine chair built by the fire. But wishing ain't what keeps a good folk going these days.\u000a\u000aStone floor's heated up a bit since I started working. Wish I could stay here and build another chair for..\u000a<<endif>>\u000a\u000a[[a second knock hurries me to the door|Knock2]]
 p75
 sg23
 VKnock
@@ -214,9 +214,9 @@ g26
 ((I2015
 I1
 I23
-I20
-I52
-I5
+I22
+I53
+I24
 I4
 I23
 I0
@@ -243,10 +243,10 @@ tp84
 Rp85
 sbsa(dp86
 g14
-I00
+I01
 sg15
 (lp87
-F374.0
+F430.0
 aF290.0
 asg17
 (itiddlywiki
@@ -254,7 +254,7 @@ Tiddler
 p88
 (dp89
 g21
-VI crack the door open letting a gust of chilly air tendrils swipe through my home.\u000a\u000aWell iron my stone, its one of my family, one of the young sprouts soon to be a newly wed. They know I'll get their house frame up tomorrow..\u000a\u000a"Heya, mind if I come inside? Cold out here with no home. Stranger broke my glass shield, I've got no way to keep me warm."\u000a\u000a"I put on the bonfire and saw you sitting cozy. Not enough for a young one?"\u000a\u000a"My hands stayed warm but the snow is freezing the rest of me. Can I make this my home tonight and stay warm?"\u000a\u000a[[I let my kin folk in|Entrance]]\u000a[[I need the warmth for my hardworking bones|Deflection]]
+V<<if $chair eq false>>\u000a\u000aI crack the door open feeling the cold air settle against my skin.\u000a\u000aWell iron my stone, its one of my family, one of the young sprouts soon to be a newly wed. They know I'll get their house frame up tomorrow..\u000a\u000a"Heya, mind if I come inside? Cold out here with no home. Stranger broke my window with a fireplace brick; I've got no way to keep me warm."\u000a\u000a"I put on the bonfire and saw you sitting cozy. Not enough for a young one?"\u000a\u000a"My hands stayed warm but the snow is freezing the rest of me. Can I make this my home tonight and stay warm?"\u000a\u000a[[I let my kin folk in|Entrance]]\u000a[[I need the warmth for my hardworking bones|Deflection]]\u000a<<else>>\u000a\u000aI crack the door open letting a gust of cold air sweep through my home.\u000a\u000aWell rock my chair, its one of my family, another young sprout soon to be a newly wed. They know my house goes up first tomorrow..\u000a\u000a"Heya, mind if I come inside? Cold out here without a bed to keep warm in."\u000a\u000a"You're getting married in a few days -- is life really so cold for you?"\u000a\u000a"My partner's gathering firewood in the east forest. I worked yesterday but need to sleep well to help with your house tomorrow."\u000a\u000a[[I let my kin folk in|Entrance2]]\u000a[[I need the warmth for my hardworking bones|Deflection2]]\u000a\u000a<<endif>>\u000a\u000a
 p90
 sg23
 VKnock2
@@ -264,9 +264,9 @@ g26
 ((I2015
 I1
 I23
-I20
-I58
-I8
+I23
+I4
+I50
 I4
 I23
 I0
@@ -293,10 +293,10 @@ tp99
 Rp100
 sbsa(dp101
 g14
-I01
+I00
 sg15
 (lp102
-F402.0
+F430.0
 aF150.0
 asg17
 (itiddlywiki
@@ -304,7 +304,7 @@ Tiddler
 p103
 (dp104
 g21
-VI welcome my kin folk inside.\u000a\u000aWe sit in front of the fire
+VI welcome my kin folk inside.\u000a\u000aWe sit in front of the fire and talk about how cold outside has gotten since west forest burned down.\u000a\u000aWe talk easily, warming ourselves in front of the fire and then something goes wrong.\u000a\u000aI explain to my kin folk that the home will take another day before the frame goes up. I try to explain this, I try to explain everything about my building.. but there's no convincing this one.\u000a\u000a[[they strike without warning|StruckDown]]
 p105
 sg23
 VEntrance
@@ -314,9 +314,9 @@ g26
 ((I2015
 I1
 I23
-I20
-I58
-I55
+I22
+I39
+I0
 I4
 I23
 I0
@@ -346,7 +346,7 @@ g14
 I00
 sg15
 (lp117
-F486.0
+F430.0
 aF430.0
 asg17
 (itiddlywiki
@@ -377,10 +377,60 @@ sg31
 (lp125
 sg33
 g124
+sbsa(dp126
+g14
+I00
+sg15
+(lp127
+F430.0
+aF10.0
+asg17
+(itiddlywiki
+Tiddler
+p128
+(dp129
+g21
+VHe falls dead by the fire.\u000a\u000aI pull in timber from the pile outside and start crafting a chair to sit in.\u000a\u000aMy hands take time to warm up but when they do, I carve quickly.\u000a\u000aI'm happy to feel the warmth of the fire as I work hard, as a good folk should.\u000a\u000a<<silently>>\u000a<<set $chair = true>>\u000a<<endsilently>>\u000a[[I finally finish my work|Start]]
+p130
+sg23
+VStruckDown
+p131
+sg25
+g26
+((I2015
+I1
+I23
+I22
+I43
+I18
+I4
+I23
+I0
+tp132
+(dp133
+tp134
+Rp135
+sg31
+(lp136
+sg33
+g26
+((I2015
+I1
+I23
+I22
+I39
+I5
+I4
+I23
+I0
+tp137
+(dp138
+tp139
+Rp140
 sbsasS'scale'
-p126
+p141
 I1
 sS'snapping'
-p127
+p142
 I00
 ss.
